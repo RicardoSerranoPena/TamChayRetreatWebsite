@@ -4,26 +4,53 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+/**
+ * Class PagesController
+ *
+ * @package App\Http\Controllers
+ */
 class PagesController extends Controller
 {
-    public function index() {
+  /**
+   * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+   */
+  public function index() {
       return view('pages.index');
     }
 
-    public function about() {
+  /**
+   * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+   */
+  public function about() {
       return view('pages.about');
     }
 
-    public function contact() {
+  /**
+   * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+   */
+  public function contact() {
       return view('pages.contact');
     }
 
 
-    public function guidelines() {
+  /**
+   * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+   */
+  public function guidelines() {
       return view('pages.guidelines');
     }
 
-    public function rooms() {
+  /**
+   * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+   */
+  public function rooms() {
       return view('pages.rooms');
+    }
+
+  /**
+   * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+   */
+  public function partnerships() {
+      return view('pages.partnerships');
     }
 }

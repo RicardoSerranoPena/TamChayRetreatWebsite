@@ -21,4 +21,10 @@ Route::get('/guidelines', 'PagesController@guidelines');
 
 Route::get('/rooms', 'PagesController@rooms');
 
+Route::get('/partnerships', 'PagesController@partnerships');
+
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
 

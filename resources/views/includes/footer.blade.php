@@ -1,12 +1,12 @@
-<section class="section bg-image overlay" style="background-image: url();">
+<section class="section bg-image overlay" style="background-image: url(#);">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left">
-                <h2 class="text-white font-weight-bold"><?php echo $this->texts["footer_prgrph"]; ?></h2>
+                <h2 class="text-white font-weight-bold">@lang('texts.footer_prgrph')</h2>
             </div>
             <div class="col-12 col-md-6 text-center text-md-right">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reserve-now">
-                  <?php echo $this->texts["book_now"]; ?>
+                  @lang('texts.book_now')
                 </button>
             </div>
         </div>
@@ -17,17 +17,17 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title" id="exampleModalLongTitle"><?php echo $this->texts["book_now"]; ?></h3>
+                <h3 class="modal-title" id="exampleModalLongTitle">@lang('texts.book_now')</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <a href="#" role="button" class="btn btn-primary"><?php echo $this->texts["book_for_travellers"]; ?></a>
-                <a href="#" role="button" class="btn btn-primary"><?php echo $this->texts["book_for_groups"]; ?></a>
+                <a href="#" role="button" class="btn btn-primary">@lang('texts.book_for_travellers')</a>
+                <a href="#" role="button" class="btn btn-primary">@lang('texts.book_for_groups')</a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo $this->texts["close"]; ?></button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">@lang('texts.close')</button>
             </div>
         </div>
     </div>
