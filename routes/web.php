@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\MessagesController;
+
+Route::get('/', 'PagesController@index');
+
+Route::get('/about', 'PagesController@about');
+
+Route::get('/contact', 'PagesController@contact');
+
+Route::get('/guidelines', 'PagesController@guidelines');
+
+Route::get('/rooms', 'PagesController@rooms');
+
+Route::get('/partnerships', 'PagesController@partnerships');
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
+
+Route::resource('messages', 'MessagesController');
+
