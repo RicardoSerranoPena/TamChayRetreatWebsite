@@ -1,3 +1,10 @@
+h1, h2, h3, h4, h5 {
+  color: #81b673;
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .section {
   padding: 7em 0;
 }
@@ -39,20 +46,44 @@
 @media (max-width: 991.98px) {
   .site-block-half .image {
     margin-bottom: 50px;
-    height: 300px; } }
+    height: 300px;
+  }
+}
 
 .site-block-half .text {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+}
+
 @media (min-width: 992px) {
   .site-block-half .text {
-    padding: 4rem; } }
+    padding: 4rem;
+  }
+}
 
 .site-block-half .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
+
 @media (max-width: 991.98px) {
   .site-block-half .bg-image {
-    height: 400px; } }
+    height: 400px;
+  }
+}
+
+.contact-section .contact-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-section .contact-info p .d-block {
+  font-size: 14px;
+  letter-spacing: .2em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}

@@ -58,6 +58,7 @@
     @include('includes.navbar')
 
     <div class="container">
+        @include('includes.notices')
         @yield('content')
     </div>
 
