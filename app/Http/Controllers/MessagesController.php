@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CustomerMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Message;
 
 class MessagesController extends Controller {
@@ -35,7 +37,7 @@ class MessagesController extends Controller {
   public function store(Request $request) {
     $this->validate($request, [
       'name' => 'required',
-      'email' => 'required',
+      'email' => 'required | email',
       'message' => 'required'
     ]);
 
@@ -45,6 +47,9 @@ class MessagesController extends Controller {
     $message->email = $request->input('email');
     $message->message = $request->input('message');
     $message->save();
+
+    Mail::to('contact@tamchayretreat.com')
+      ->send(new CustomerMessage($message));
 
     return redirect('/contact')->with('success', 'message sent');
     }
