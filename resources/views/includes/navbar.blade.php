@@ -10,7 +10,7 @@
                 <a class="nav-link" href="/about">@lang('texts.about')
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">@lang('texts.contact')
+                <a class="nav-link" href="/messages/create">@lang('texts.contact')
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/rooms">@lang('texts.rooms')

@@ -32,6 +32,7 @@ class CustomerMessage extends Mailable implements ShouldQueue
     public function build()
     {
       return $this->from('reservations@tamchayretreat.com')
+        ->subject('Contact')
         ->markdown('emails.new_message')
         ->with([
           'name' => $this->message->name,

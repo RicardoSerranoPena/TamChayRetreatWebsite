@@ -24,7 +24,7 @@ class MessagesController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function create() {
-    //
+    return view('pages.contact');
   }
 
   /**
@@ -48,10 +48,10 @@ class MessagesController extends Controller {
     $message->message = $request->input('message');
     $message->save();
 
-    Mail::to('contact@tamchayretreat.com')
+    Mail::to('ngoc@tamchayretreat.com')
       ->send(new CustomerMessage($message));
 
-    return redirect('/contact')->with('success', 'message sent');
+    return redirect('/contact/create')->with('success', 'message sent');
     }
 
   /**
